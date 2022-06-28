@@ -6,9 +6,10 @@ puts "----------"
 # Your code goes below here ...
 
 class Store < ActiveRecord::Base
+  has_many :employees
 end
 
-store1 =
+@store1 =
   Store.create(
     name: "Burnaby",
     annual_revenue: 300_000,
@@ -16,7 +17,7 @@ store1 =
     womens_apparel: true
   )
 
-store2 =
+@store2 =
   Store.create(
     name: "Richmond",
     annual_revenue: 1_260_000,
@@ -24,7 +25,7 @@ store2 =
     womens_apparel: true
   )
 
-store3 =
+@store3 =
   Store.create(
     name: "Gastown",
     annual_revenue: 190_000,
