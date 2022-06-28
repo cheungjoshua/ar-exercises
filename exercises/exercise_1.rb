@@ -31,3 +31,5 @@ store3 =
     mens_apparel: true,
     womens_apparel: false
   )
+
+p Store.count
